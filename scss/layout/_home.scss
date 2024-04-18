@@ -528,9 +528,8 @@
             .hidden-info {
                 position: absolute;
                 top: 50%;
-                transform: translateY(-50%);
+                transform: translate(-50%, -50%);
                 position: absolute;
-                transform: translateX(-50%);
                 left: 50%;
                 z-index: 1;
                 color: $white;
@@ -538,7 +537,6 @@
 
                 h3 {
                     text-align: center;
-                    white-space: nowrap;
                     font-size: 30px;
                     text-shadow: black 0.1em 0.1em 0.2em;
                 }
