@@ -36,21 +36,45 @@
         }
     }
 
-    .location{
+    .location {
         display: flex;
         gap: 1rem;
         margin: 1rem 0;
 
-        input{
+        input {
             border-radius: 12px;
         }
 
-        .street{
+        .street {
             width: 60%;
         }
 
-        .apt{
+        .apt {
             width: 40%;
+        }
+    }
+
+    .personal-details-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 2rem 0rem;
+
+        input {
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+
+    .services.truck-load{
+        .service{
+            .icon-div {
+                width: 8rem;
+
+                img {
+                    width: 100%;
+                }
+            }
         }
     }
 
@@ -80,23 +104,23 @@
         display: none;
     }
 
-    button {
-        background-color: #04AA6D;
-        color: #ffffff;
-        border: none;
-        padding: 10px 20px;
-        font-size: 17px;
-        font-family: Raleway;
-        cursor: pointer;
-    }
+    // button {
+    //     background-color: #04AA6D;
+    //     color: #ffffff;
+    //     border: none;
+    //     padding: 10px 20px;
+    //     font-size: 17px;
+    //     font-family: Raleway;
+    //     cursor: pointer;
+    // }
 
-    button:hover {
-        opacity: 0.8;
-    }
+    // button:hover {
+    //     opacity: 0.8;
+    // }
 
-    #prevBtn {
-        background-color: #bbbbbb;
-    }
+    // #prevBtn {
+    //     background-color: #bbbbbb;
+    // }
 
     /* Make circles that indicate the steps of the form: */
     .step {

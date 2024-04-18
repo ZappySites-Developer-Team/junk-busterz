@@ -86,8 +86,8 @@
                 <div class="logo-section d-xl-none d-inline">
                     <a href="/index.html"><img class="logo" src="/img/logo.png" alt="Junk Busterz Logo Image"></a>
                 </div>
-                               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
                     <i class="fa-solid fa-bars text-dark fs-22"></i>
                 </button>
 
@@ -313,7 +313,7 @@
                             <div class="icon-div">
                                 <img src="/img/residential-junk-removal.png" alt="Residential Junk Removal">
                             </div>
-                            <input type="checkbox" id="residential" name="serviceType" checked />
+                            <input type="checkbox" id="residential" value="Residential Junk Removal" name="serviceType" checked />
                             <p class="name">
                                 Residential Junk Removal
                             </p>
@@ -323,7 +323,7 @@
                             <div class="icon-div">
                                 <img src="/img/commercial-junk-removal.png" alt="Commercial Junk Removal">
                             </div>
-                            <input type="checkbox" id="commercial" name="serviceType" />
+                            <input type="checkbox" value="Commercial Junk Removal" id="commercial" name="serviceType" />
                             <p class="name">
                                 Commercial Junk Removal
                             </p>
@@ -333,7 +333,7 @@
                             <div class="icon-div">
                                 <img src="/img/property-cleanouts.png" alt="Property Cleanouts">
                             </div>
-                            <input type="checkbox" id="propertyCleanouts" name="serviceType" />
+                            <input type="checkbox" value="Property Cleanouts" id="propertyCleanouts" name="serviceType" />
                             <p class="name">
                                 Property Cleanouts
                             </p>
@@ -343,7 +343,7 @@
                             <div class="icon-div">
                                 <img src="/img/light-demolition.png" alt="Light Demolition">
                             </div>
-                            <input type="checkbox" id="lightDemolition" name="serviceType" />
+                            <input type="checkbox" value="Light Demolition" id="lightDemolition" name="serviceType" />
                             <p class="name">
                                 Light Demolition
                             </p>
@@ -370,25 +370,69 @@
                         confirm availability and lock-in your appointment!
                     </p>
                     <div class="personal-details-form">
-                        <div class="fullname-flex">
-                            <input type="text" class="input" id="firstName" placeholder="First Name*" name="firstName"
-                                required />
 
-                            <input type="text" class="input" id="lastName" placeholder="Last Name*" name="firstName"
-                                required />
-                        </div>
+                        <input type="text" class="input" id="firstName" placeholder="First Name*" name="firstName"
+                            required />
+
+                        <input type="text" class="input" id="lastName" placeholder="Last Name*" name="firstName"
+                            required />
                         <input type="text" class="input" id="phone" placeholder="Phone*" name="phone" required />
                         <input type="email" class="input" id="email" placeholder="Email*" name="email" required />
                     </div>
                 </div>
-                <div class="tab">Login Info:
-                    <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
-                    <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+                <div class="tab">
+                    <h3 class="header text-center mb-1">
+                      Select Truck Sizes
+                    </h3>
+                    <p class="fs-18 fw-600 text-center">
+                        Please select the truck size that best fits your needs.
+                    </p>
+                    <div class="services truck-load">
+                        <label for="1-4TruckLoad" class="service">
+                            <div class="icon-div">
+                                <img src="/img/truck-1-4.png" alt="1/4 Truck Load">
+                            </div>
+                            <input type="radio" value="1/4 Truck Load" id="1-4TruckLoad" name="truckLoad" checked />
+                            <p class="name">
+                                1/4 Truck Load
+                            </p>
+                        </label>
+
+                        <label for="2-4TruckLoad" class="service">
+                            <div class="icon-div">
+                                <img src="/img/truck-2-4.png" alt="2/4 Truck Load">
+                            </div>
+                            <input type="radio" value="2/4 Truck Load" id="2-4TruckLoad" name="truckLoad" />
+                            <p class="name">
+                                2/4 Truck Load
+                            </p>
+                        </label>
+
+                        <label for="3-4TruckLoad" class="service">
+                            <div class="icon-div">
+                                <img src="/img/truck-3-4.png" alt="3-4TruckLoad">
+                            </div>
+                            <input type="radio" value="3/4 Truck Load" id="3-4TruckLoad" name="truckLoad" />
+                            <p class="name">
+                                3/4 Truck Load
+                            </p>
+                        </label>
+
+                        <label for="4-4TruckLoad" class="service">
+                            <div class="icon-div">
+                                <img src="/img/truck-4-4.png" alt=" 4-4 Truck Load">
+                            </div>
+                            <input type="radio" value="4-4 Truck Load" id="4-4TruckLoad" name="truckLoad" />
+                            <p class="name">
+                                4-4 Truck Load
+                            </p>
+                        </label>
+                    </div>
                 </div>
                 <div style="overflow:auto;">
                     <div style="float:right;">
-                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                        <button type="button" class="btn btn-info py-2 fw-600" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                        <button type="button" class="btn btn-primary px-4 py-2 fw-600" id="nextBtn" onclick="nextPrev(1)">Next</button>
                     </div>
                 </div>
                 <!-- Circles which indicates the steps of the form: -->
@@ -400,6 +444,10 @@
                 </div>
             </form>
         </div>
+    </section>
+
+    <section clas>
+
     </section>
 
 
