@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
     <title>
-        Book Online | Junk Busterz
+        Request Estimate | Junk Busterz
     </title>
 
     <meta name="description"
@@ -52,9 +52,9 @@
                     </div>
 
                     <div class="d-flex align-items-center gap-2">
-                        <a class="btn fw-600 px-5 py-2" title="Junk Busterz Book Online Button"
+                        <a class="btn fw-600 px-5 py-2" title="Junk Busterz Request Estimate Button"
                             href="/book-online.html">
-                            Book Online
+                            Request Estimate
                         </a>
                     </div>
                 </div>
@@ -297,20 +297,86 @@
         <div class="container">
 
             <form id="regForm" action="/action_page.php">
-                <h1>Register:</h1>
                 <!-- One "tab" for each step in the form: -->
-                <div class="tab">Name:
-                    <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-                    <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+                <div class="tab">
+                    <h3 class="header text-center mb-1">
+                        How Can We Help You?
+                    </h3>
+                    <p class="fs-18 fw-600 text-center">
+                        Please select all that apply.
+                    </p>
+                    <div class="services">
+                        <label for="residential" class="service">
+                            <div class="icon-div">
+                                <img src="/img/residential-junk-removal.png" alt="Residential Junk Removal">
+                            </div>
+                            <input type="checkbox" id="residential" name="serviceType" checked />
+                            <p class="name">
+                                Residential Junk Removal
+                            </p>
+                        </label>
+
+                        <label for="commercial" class="service">
+                            <div class="icon-div">
+                                <img src="/img/commercial-junk-removal.png" alt="Commercial Junk Removal">
+                            </div>
+                            <input type="checkbox" id="commercial" name="serviceType" />
+                            <p class="name">
+                                Commercial Junk Removal
+                            </p>
+                        </label>
+
+                        <label for="propertyCleanouts" class="service">
+                            <div class="icon-div">
+                                <img src="/img/property-cleanouts.png" alt="Property Cleanouts">
+                            </div>
+                            <input type="checkbox" id="propertyCleanouts" name="serviceType" />
+                            <p class="name">
+                                Property Cleanouts
+                            </p>
+                        </label>
+
+                        <label for="lightDemolition" class="service">
+                            <div class="icon-div">
+                                <img src="/img/light-demolition.png" alt="Light Demolition">
+                            </div>
+                            <input type="checkbox" id="lightDemolition" name="serviceType" />
+                            <p class="name">
+                                Light Demolition
+                            </p>
+                        </label>
+                    </div>
                 </div>
-                <div class="tab">Contact Info:
-                    <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
-                    <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+                <div class="tab">
+                    <h3 class="header text-center">
+                        Location
+                    </h3>
+                    <div class="location">
+                        <input type="text" class="street" id="streetAddress" placeholder="Street Address, City, State"
+                            name="name" required />
+                        <input type="text" class="apt" id="apt" placeholder="Apt/ Unit/ Suite" name="name" required />
+                    </div>
                 </div>
-                <div class="tab">Birthday:
-                    <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
-                    <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
-                    <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
+
+                <div class="tab">
+                    <h3 class="header text-center">
+                        How Can We Reach You?
+                    </h3>
+                    <p class="fs-18 fw-600 text-center">
+                        Please provide your contact information so we can get in touch. We will also follow up to
+                        confirm availability and lock-in your appointment!
+                    </p>
+                    <div class="personal-details-form">
+                        <div class="fullname-flex">
+                            <input type="text" class="input" id="firstName" placeholder="First Name*" name="firstName"
+                                required />
+
+                            <input type="text" class="input" id="lastName" placeholder="Last Name*" name="firstName"
+                                required />
+                        </div>
+                        <input type="text" class="input" id="phone" placeholder="Phone*" name="phone" required />
+                        <input type="email" class="input" id="email" placeholder="Email*" name="email" required />
+                    </div>
                 </div>
                 <div class="tab">Login Info:
                     <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
