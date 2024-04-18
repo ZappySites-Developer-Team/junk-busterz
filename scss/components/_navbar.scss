@@ -5,9 +5,8 @@ nav {
     z-index: 2;
     width: 100%;
     height: fit-content;
-    // background-color: $primary;
-    background: rgb(204,223,56);
-    background: linear-gradient(180deg, rgba(204,223,56,1) 1%, rgba(46,178,76,1) 48%);
+    background-color: $dark;
+
 
     @media (max-width: 1200px) {
         padding: 16px 0;
@@ -59,7 +58,6 @@ nav {
     margin-top: -4rem;
     z-index: 10;
     position: relative;
-    filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.5));
 
     @media (max-width: 1400px) {
         width: 17rem;

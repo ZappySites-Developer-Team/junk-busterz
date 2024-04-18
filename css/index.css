@@ -13105,8 +13105,7 @@ nav {
   z-index: 2;
   width: 100%;
   height: fit-content;
-  background: rgb(204, 223, 56);
-  background: linear-gradient(180deg, rgb(204, 223, 56) 1%, rgb(46, 178, 76) 48%);
+  background-color: #212529;
 }
 @media (max-width: 1200px) {
   nav {
@@ -13160,7 +13159,6 @@ nav .navbar-nav .nav-link:hover {
   margin-top: -4rem;
   z-index: 10;
   position: relative;
-  filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.5));
 }
 @media (max-width: 1400px) {
   .logo {
@@ -14515,6 +14513,17 @@ footer .footer-nav svg {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 2rem 0;
+  gap: 0.5rem;
+}
+@media (max-width: 992px) {
+  .book-online .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .book-online .services {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .book-online .services .service {
   display: flex;
@@ -14524,7 +14533,6 @@ footer .footer-nav svg {
   border: 2px solid #d4d4d4;
   padding: 1rem;
   border-radius: 12px;
-  margin: 0 0.5rem;
 }
 .book-online .services .service .icon-div {
   width: 5rem;
@@ -14538,6 +14546,7 @@ footer .footer-nav svg {
 }
 .book-online .services .service .name {
   color: #212529;
+  text-align: center;
   font-size: 18px;
   font-weight: 600;
 }
@@ -14546,14 +14555,29 @@ footer .footer-nav svg {
   gap: 1rem;
   margin: 1rem 0;
 }
+@media (max-width: 768px) {
+  .book-online .location {
+    flex-direction: column;
+  }
+}
 .book-online .location input {
   border-radius: 12px;
 }
 .book-online .location .street {
   width: 60%;
 }
+@media (max-width: 768px) {
+  .book-online .location .street {
+    width: 100%;
+  }
+}
 .book-online .location .apt {
   width: 40%;
+}
+@media (max-width: 768px) {
+  .book-online .location .apt {
+    width: 100%;
+  }
 }
 .book-online .personal-details-form {
   display: flex;
@@ -14573,7 +14597,6 @@ footer .footer-nav svg {
 }
 .book-online #regForm {
   background-color: #ffffff;
-  margin: 100px auto;
   padding: 40px;
 }
 .book-online h1, .book-online .h1 {

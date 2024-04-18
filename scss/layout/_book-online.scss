@@ -4,6 +4,15 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         margin: 2rem 0;
+        gap: 0.5rem;
+
+        @media (max-width: 992px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 576px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
 
         .service {
             display: flex;
@@ -13,7 +22,6 @@
             border: 2px solid #d4d4d4;
             padding: 1rem;
             border-radius: 12px;
-            margin: 0 0.5rem;
 
             .icon-div {
                 width: 5rem;
@@ -30,6 +38,7 @@
 
             .name {
                 color: $dark;
+                text-align: center;
                 font-size: 18px;
                 font-weight: 600;
             }
@@ -40,6 +49,9 @@
         display: flex;
         gap: 1rem;
         margin: 1rem 0;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
 
         input {
             border-radius: 12px;
@@ -47,10 +59,18 @@
 
         .street {
             width: 60%;
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
         }
 
         .apt {
             width: 40%;
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
         }
     }
 
@@ -66,8 +86,8 @@
         }
     }
 
-    .services.truck-load{
-        .service{
+    .services.truck-load {
+        .service {
             .icon-div {
                 width: 8rem;
 
@@ -80,7 +100,6 @@
 
     #regForm {
         background-color: #ffffff;
-        margin: 100px auto;
         padding: 40px;
     }
 
