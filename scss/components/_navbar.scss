@@ -1,10 +1,15 @@
+.top-information-main{
+    background-color: $white;
+}
 nav {
     z-index: 2;
     width: 100%;
     height: fit-content;
+    background-color: $primary;
 
     @media (max-width: 1200px) {
         padding: 16px 0;
+        background-color: $white;
     }
 
     .navbar-nav {
